@@ -1,0 +1,60 @@
+<!-- Forms in HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - lets learn it </title>
+
+</head>
+<body> 
+    <h1>form to apply for counsulting</h1>
+    <form action="post"></form> <!--Action - get request or post request kya hai dono me se get simple post ya sever ko batana hai ya hit krna hai -> jb jada data dena hota hoga -->
+    <div>
+    <label for="username">Enter you username</label> <!--lable me uski id dalenge jiski input ke liye label bna rha hu-->
+    <input type="text" name="username"id = "username" placeholder =" Enter you username"> <!--id  is unique kisi aur ko nhi mil skta its unique-->
+    </div>
+    <div>
+        <!--Radio tag-->
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female">
+    <label for="Rather not to say">Rather not to Say</label>
+    <input type="radio" name="gender" id="Rather not to say">
+    </div>
+    <div>
+        <!--checkbox Tag-->
+        <input type="checkbox" name="subscribe" id="subscribe" value =" yes">
+        <label for="subscribe">Subscribe to my newsletter</label>
+    </div>
+     <!--Text area tag-->
+     <div>
+        <label for="comment"> Enter your comment here </label>
+        <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+     </div>
+ <!--select tag-->
+    <div>
+        <label for="Fruit">Choose your fav fruit: </label>
+        <select name="Fruit" id="Fruit">
+            <option value="Apple">Apple</option>
+            <option value="banana">banana</option>
+            <option value="kiwi">kiwi</option>
+        </select>
+    </div>
+    
+
+
+     <!--button-->
+     <div>
+        <button type="button">submit </button>
+     </div>
+ 
+
+
+     <!-- there many more tags to explore later  -->
+
+    
+</body>
+</html>
