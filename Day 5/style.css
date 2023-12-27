@@ -1,0 +1,14 @@
+/* . laga ke hum class ko target krte hai  */
+.red{ 
+  background-color: brown;
+}
+
+.bg-yellow{
+    background-color: aqua;
+}
+
+/* # laga ke hum id ko target krta hai */
+
+#Firstdiv{
+    /* background-color: brown; */
+}
