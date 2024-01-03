@@ -1,0 +1,97 @@
+<!-- CSS Selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* class Selector */
+        .red{
+            background-color: red;
+            color: aqua;
+        }
+
+        /* id selector */
+        #green{
+            color : yellow;
+            background-color: red;
+        }
+
+        /* child selector */
+        div > p{  /* paragraph jo div ke ander usse target kr rha hai ye (div ka direct child hoga tbhi run hoga ya apply ye case) */
+            color:blue;
+            background-color: brown;
+        }
+
+        /* Descendent selector */
+        div p{ /* iska mtlb hai div ke ander hona chaiye bus kahi bhi ho div ke ander hoga to apply */
+            color: blue;
+            background-color: red;
+        }
+
+        /* universal selector */
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        /* pseudo selectors */
+        a:visited{
+            color : yellow;
+        }
+
+        a:link{
+            color: green;
+
+        }
+        a:active{ /* active krte smaye background color red ho jye*/
+            background-color: red;
+        }
+        a:hover{
+           
+            background-color: aqua;
+        }
+        p:first-child{ /* jaha jaha p first child hoga apne parent ka waha waha p pe apply ho jyegi ye class*/
+            background-color: fuchsia; 
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <main class = "one">
+        <p>i am selector</p>
+        <p>i am selector</p>
+        <p>i am selector</p>
+    </main> 
+
+    <div class = "red">i am a Div
+     <article>
+        <p>I am a para inside div</p>
+    </article>
+    </div>
+
+
+    <div> I am a hero
+    </div>
+     
+    <div id = "green">I have a box </div>
+    
+    <a href="http://www.google.com "> google.com</a>
+    <a href="http://www.facebook.com "> facebook.com</a>
+
+</body>
+</html>

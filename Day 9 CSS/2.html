@@ -1,0 +1,59 @@
+<!-- CSS Box model -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    
+ 
+
+    <style>
+        .box{
+            background-color: aqua;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box1{
+            color: blue;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 100px;
+             box-sizing: border-box; /*total content height:  hogi total waise sirf height height 200 hogi (it means height jo de rha hu padding and height border mila ke de rha hu means padding + border mila ke total 100 hogi) */
+        }
+        
+        /* margin collapse -> the concept of margin collapse says that if the margin of two element is overlapping then the maximum margin will be applied only once */
+
+        /* like if i have a margin of 25 like if i gave 25 margin in this and 25 margin in box 2 then max is 25 then 25 will be only one time or if there wil be 25, 35 then 35 will be aplllied */
+
+        .box2{
+            color: brown;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid brown;
+            height: 100px;
+             box-sizing: border-box;
+ 
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box box1"> i am a box
+
+    </div>
+    <div class = "box box2">i am another class</div>
+    <img src="marign colllapse.jpeg" alt="margin collapse image">
+</body>
+</html>
+<!-- 
+Calculating the total dimension of the element
+The total with and height of the element is calculated with the formula:
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom margin -->
