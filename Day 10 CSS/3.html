@@ -1,0 +1,50 @@
+<!-- CSS sizing units -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+             width: 100vw; 
+             height: 10vh;
+             margin: auto; 
+            background-color: aquamarine;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            height: 80vh;
+            /* width: 2048px; */
+             width: 100vw; /*vw -> view port width - view port width means auto view ke hisab se adjuct ho jata hai  */ 
+             margin:  23px auto; /* horizontal and vertical tmargin ko alag krne ka way hai top bottom ka 23 px hai and auto left right ka hai left right se auto hai  */
+            font-size: 16px;
+             background-color: aquamarine;
+        }
+        .container p{
+            font-size: 1.5em; /* inherit krke jitna size milna tha uska 1.5 guna krdo ye mtlb hai iska */
+            /* rem- > means root ko jitna milne wala tha uska itne guna dedo 
+            em ->mtlb itna guna dedo original ka */
+        }  
+    </style>
+
+</head>
+<body>
+    <div class = "box">
+        This is a box
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dolores omnis consequuntur. Voluptatem pariatur inventore aperiam officiis vel, itaque a officia eos quaerat suscipit magni repellat quam quas, saepe illum, corporis numquam. Sequi nobis incidunt voluptate distinctio impedit, fuga expedita, adipisci numquam veritatis pariatur molestias.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quaerat minima dolor rerum ea consequatur recusandae. Nesciunt debitis sed asperiores tenetur quaerat repellendus consectetur fuga. Harum accusamus corrupti voluptate voluptas enim, id dolores?</p>
+    </div>
+</body>
+</html>
