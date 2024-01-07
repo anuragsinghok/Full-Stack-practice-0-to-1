@@ -1,0 +1,35 @@
+<!-- Styling Lists using CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    
+    <style>
+        nav ul{
+            display: flex;
+            padding: 33 px;
+        }
+        nav ul li{
+            list-style: devanagari;
+            background-color: yellow;
+             list-style-position: inside; /*marker jo hai 1, 2,3 wo ander ajaye list ke isliye kra hai ye phele by default nhi hota hai marker excluded hota hai  */
+            border: 2px solid black;
+
+            /* list-style-type: "you can put any emoji here " ; */
+            /* list-style-image: url("you can use an image here "); */
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+</body>
+</html>
