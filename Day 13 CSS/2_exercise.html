@@ -5,9 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         
+        .card{
+            margin: 3px;
+            background-color: aquamarine;
+            padding: 2px;
+            height: 50vh;
+            width: 60vw;
+            border:  2px solid black;
+            overflow-y:calc()
+            
+            
+        }
+        .card1{
+            margin: 3px;
+            padding: 1px;
+            height: 23vh ;
+            overflow:auto;
+            border:1px solid white;
+            box-shadow: 2px;
+        }
+        .card2{
+            margin: 3px;
+            padding: 2px;
+            
+        }
+        .card3 button{
+           position: relative ;
+           left: 90px;
+           background-color: red;
+           size:34cm;
+           
+        }
+
+    </style>
 </head>
 <body>
-    card.png is a file which contain a card image . write html and css code to design this card
-     check ss file and make it as it is in a way
+    <!-- card.png is a file which contain a card image . write html and css code to design this card
+     check ss file and make it as it is in a way -->
+
+     <div class = "card">
+        <div class="card1"><img src="cust-img.png" sizes="3" alt="photo"></div>
+        <div class="card2"><h1>Lorem, ipsum dolor.</h1></div>
+        <div class="card2"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, enim!.</p></div>
+        <div class="card3"><button>Read more</button></div>
+     </div>
+
 </body>
 </html>
