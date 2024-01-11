@@ -1,0 +1,70 @@
+<!-- CSS Variables -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* root is a global variable */
+        /* css varable can hold maultiple things not ony colors */
+        :root{
+            --color: blue;
+            --seccolor: rgb(87, 87, 222);
+            /* defpad means default padding */
+            --defpad : 23px ;
+            --defop: 0.2;
+
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+    .nav{
+        background-color:  var(--color);
+    }
+    ul li{
+        opacity: var(--defop);
+        list-style: none;
+        padding: var(--defpad);
+        margin: 2px;
+        border: 2px solid var(--seccolor);
+    }
+    ul{
+        display: flex;
+    }
+    ul li:first-child{
+        /* here color is a local variable */
+        --color: rgba(255, 51, 0, 0.764);
+        /* when color varibale is not found then var(--color, blue) - blue wala use hoga fall back krega aur blue variable to use krega */
+        background-color: var(--color,blue);
+        
+    }
+    .container{
+        background-color: var(--seccolor);
+    }
+
+    
+
+    </style> 
+
+
+</head>
+<body>
+    <div class = "nav">
+        <ul>
+            <li>Home </li>
+            <li>About </li>
+            <li>Contact </li>
+        </ul>
+    </div>
+    <div>
+        <div class="container">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sint obcaecati facere autem distinctio reiciendis explicabo deserunt culpa voluptates, suscipit, voluptas eligendi facilis amet alias accusantium perferendis, eius id? Autem pariatur atque debitis molestiae error aut esse sit quasi, laboriosam iure tenetur veritatis voluptate exercitationem?
+        </div>
+    </div>
+</body>
+</html>

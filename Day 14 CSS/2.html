@@ -1,0 +1,32 @@
+<!-- CSS media Query -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+        }
+        @media screen and (orientation: landscape){
+            body{
+                border: 2px solid purple;
+            }
+        }
+        
+      /* it is used to make resposive a webpage in better way */
+        /* syntax - > @media no|only mediatype{screen,print,speech devices etc} and {expressions} CSS-code; */
+
+    </style>
+</head>
+<body>
+    <div>
+    Hey i am a red body guys!</div>
+</body>
+</html>
