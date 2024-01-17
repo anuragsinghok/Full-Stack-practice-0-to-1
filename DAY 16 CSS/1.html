@@ -1,0 +1,69 @@
+<!-- more on CSS Selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            color:yellow;
+        } */
+
+        /* .boxes *{ /*it means all element in boxes */
+            /* color: blue;
+            border: 2px solid black;
+        }
+
+
+        /* this is the example of groupping how groupping is done in css */
+        /* p,a,.box,[data-color="primary"]{
+            margin-top: 45px;
+        }  */ 
+
+        /* .box:nth-child(odd){
+            background-color: blue;
+        } */
+        /* .box:nth-last-child(2){
+            background-color: red;
+        
+        } */
+
+        .boxes::before{  /*main content se phele kr dega add ye aur after bhi hota hai ek same jo after me add krdeta hai */
+            content: "Anurag is good";
+        }
+
+
+        /* this is used to show diffferent selected parts */
+        .box::selection{
+            background-color: black;
+            color: aqua;
+
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 23px;
+        }
+        input::placeholder{
+            color: aqua;
+            font-size: 34px;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">I am a first box</div>
+        <div class="box">i am a box</div>
+        <div class="box">i am a box</div>
+        <input type="text" placeholder="type your name">
+    </div>
+    
+</body>
+</html>
