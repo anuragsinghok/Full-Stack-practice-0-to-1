@@ -1,0 +1,85 @@
+<!-- flex box in css -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+
+    <style>
+        /* flex box and uski property container pe lgti hai items pe nhi */
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /* align-items: center; center me box ke hi krte hai yaha */
+            /* flex-direction: column-reverse; */
+            /* flex direction is used to change the direction of the flex box by defult it is left to right but you can change it  */
+
+            /* more then one line hai container me to hum align-content:  use krte hai aur ek line hai to align item */
+            align-content: center;
+
+            flex-wrap: wrap;
+            /* overflow content wrap ho jyega container me hi  */
+
+            /* gaps in flex box */
+            /* gap: 30px; */
+            /* phele row rhta hai fir column */
+            gap: 10px 40px;
+            /* row-gap: 40px;
+            column-gap: 10px; */
+        }
+        /* there is no justify items in flexbox; */
+        .item{
+            /* flex-grow: 1; */
+            /* the flex-grow property determines how much space a flex item should take up if there is available space */
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: violet ;
+        }
+        .order-1{
+            order: 1;
+            flex-grow: 2;
+        }
+        .order-2{
+            order: 2;
+            flex-shrink: 2;
+            /* shirk hota hai jb deivce dimension change hoti hai  */
+        }
+        .order-3{
+            order: 3;
+            
+        }
+        /* main axis ke sath dekta hai wo aur css mainaxis ke according hi krta hai align center me aur left ya right */
+        /* longest width ya longest height wala hi hota hai main axis image deko for more in folder */
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item order-1">44</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item order-2">11</div>
+        <div class="item">2</div>
+        
+    </div>
+</body>
+</html>
