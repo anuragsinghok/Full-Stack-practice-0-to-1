@@ -1,13 +1,64 @@
-<!-- Multicolor website (project to build )-->
-
+<!-- Multicolor website using universal varibale-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        :root{
+            --color: aqua;
+            --seccolor:aquamarine;
+            
+
+        }
+        .container{
+            background-color:  var(--seccolor);
+            border: 2px solid black;
+            height: 80vh;
+            width: 80vw;
+        }
+        .item{
+            display: flex;
+            border: 2px solid black;
+            width: 80vw;
+            height: 5vh;
+            background-color: var(--color);
+
+        }
+        .items{
+            background-color: yellow;
+            border: 1px solid black;
+            
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 2fr 2fr ;
+            gap: 5px;
+            height: 5vh;
+        }
+        .cards{
+            background-color: var(--color);
+            border: 1px solid black;
+        }
+
+
+    </style>
 </head>
 <body>
-    <!-- ek weiste banai hai jise ek varibale change kroge to puri website ka color change ho jye like global varable ka use krke banani hai  -->
+   <div class="container">
+    <div class="item"> 
+    <div class="items item2">Home</div>
+    <div class="items item3">portfolio</div>
+    <div class="items item4">contact</div>
+    <div class="items item5">About us</div>
+     </div>
+     <div class="grids">
+        <div class="cards">card1</div>
+        <div class="cards">card2</div>
+        <div class="cards">card3</div>
+        <div class="cards">card4</div>
+     </div>
+   </div>
 </body>
 </html>
