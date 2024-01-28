@@ -14,4 +14,4 @@ else{
 
 console.log("Your number is .."+a)
 
-document.title = ("Hey i am  good")
+document.title = ("Hey i am  good ok")
